@@ -120,7 +120,7 @@ int main(void)
 	  HAL_Delay(1000);
 
 	  i++;
-	  if (i == 4) {
+	  if (i > 3) {
 		  i = 0;
 	  }
 

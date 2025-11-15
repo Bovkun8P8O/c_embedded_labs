@@ -96,8 +96,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	}
 	if (adcValue > 2048)
 	{
-		// red lights up at the left limit, if PWM mode 1 is set for all channels
-		// 						right					2
+		// red lights up at the left half, if PWM mode 1 is set for all channels
+		// 						right				   2
 		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
 	}
 	else
